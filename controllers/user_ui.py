@@ -93,7 +93,7 @@ def hdfs_download_file(file_path):
     if not cli.is_connection:
         return ops_renderErrJSON(msg="HDFS 连接失败!")
     client = cli.this_connection
-    client.read()
+    # client.read()
 
     if file_path[4:5+len(MyHDFS.login_name)] == MyHDFS.login_name or file_path[:6] == "public":
         with send_file_auto_delete(client,file_path) as file_name:

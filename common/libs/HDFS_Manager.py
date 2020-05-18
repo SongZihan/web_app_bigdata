@@ -56,14 +56,14 @@ class MyHDFS():
             path = request.form["path"]
             f.save(f.filename)
             try:
-                self.this_connection.upload("/lake" + path, "/root/web_app/v4/" + f.filename)
+                self.this_connection.upload("/lake" + path, "/root/web_app/v5_finish/" + f.filename)
             except:
-                os.remove("/root/web_app/v3/" + f.filename)
+                os.remove("/root/web_app/v5_finish/" + f.filename)
                 return "upload failed~~"
             else:
                 # 文件上传成功就返回刷新的地址
                 content = self.make_complete_path("/lake" + path)
-                os.remove("/root/web_app/v4/" + f.filename)
+                os.remove("/root/web_app/v5_finish/" + f.filename)
                 return "upload success!", content
 
     def delete_file_and_mkdir(self,request):

@@ -14,5 +14,5 @@ class UrlManager(object):
 
     @staticmethod
     def buildStaticUrl(path):
-        # 改进版
+        # 改进版,解决了domain为公网ip时无法访问static文件的问题
         return url_for('static', filename=path)

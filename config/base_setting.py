@@ -13,5 +13,5 @@ WTF_CSRF_ENABLED = False
 # }
 # 应该要指定生产环境的ip HOST
 DOMAIN = {
-    "www":"http://15.165.115.5:80"
+    "www":"http://songzihan.club"
 }
