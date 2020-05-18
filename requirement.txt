@@ -1,0 +1,8 @@
+flask
+flask-sqlalchemy
+mysqlclient
+flask-script
+flask_debugtoolbar
+uwsgi(conda安装)
+flask-login
+flask-wtf(conda)
