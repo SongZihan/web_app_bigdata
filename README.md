@@ -1,0 +1,2 @@
+# web_app_bigdata
+这是一个大数据平台，旨在为使用Hadoop作为存储系统的Linux服务器提供用户交互界面
